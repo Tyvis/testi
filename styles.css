@@ -1,16 +1,13 @@
+/* Styling for images */
 img {
-    /* yläosan kuva */
-    width: 100%;
-    /* suhde laidasta laitaan */
-    max-height: 300px;
-    /* kuvan koko */
-    object-fit: cover;
-    /* kuvan tyyli */
+    width: 100%; /* Full width of the container */
+    max-height: 300px; /* Set the max height */
+    object-fit: cover; /* Preserve aspect ratio */
     margin-top: 0;
 }
 
+/* Styling for the main header */
 h1 {
-    /* otsikko tyyli */
     font-family: 'Lobster', cursive;
     color: #432818;
     font-size: 5rem;
@@ -25,8 +22,8 @@ h1 {
     position: relative;
 }
 
+/* Body styling */
 body {
-    /* sivun background */
     background-color: #FFE6A7;
     font-family: 'Quicksand', sans-serif;
     color: #6F1D1B;
@@ -39,21 +36,19 @@ body {
     text-align: center;
 }
 
+/* Main section for introductory text */
 main {
-    /* tervetuloa teksti */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
     text-align: center;
     font-size: 180%;
-    font-size-adjust: from-font;
     margin: 20px;
 }
 
-
+/* Button styling */
 .btn {
-    /* linkki painikkeet */
     display: inline-block;
     padding: 12px 50px;
     background-color: #BB9457;
@@ -67,22 +62,22 @@ main {
     transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 .btn:hover {
     background-color: #99582A;
 }
 
+/* General paragraph text styling */
 p {
-    /* teksti tyyli */
     font-family: 'Quicksand', sans-serif;
     color: #6F1D1B;
     font-size: 100%;
     margin: 0;
 }
 
+/* Styling for blog post titles */
 .title-container {
-    /* kuvaus teksti */
     display: flex;
-    /* flex-wrapilla nämä saa allekkain*/
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
@@ -92,6 +87,7 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Styling for blog post descriptions */
 .description-container {
     display: flex;
     justify-content: center;
@@ -101,6 +97,7 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Styling for the second image */
 .toinen-kuva {
     max-width: 600px;
     height: auto;
