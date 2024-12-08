@@ -1,13 +1,30 @@
-/* Styling for images */
+body {
+    /* sivun background */
+    background-color: #FFE6A7;
+    font-family: 'Quicksand', sans-serif;
+    color: #6F1D1B;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
 img {
-    width: 100%; /* Full width of the container */
-    max-height: 300px; /* Set the max height */
-    object-fit: cover; /* Preserve aspect ratio */
+    /* yläosan kuva */
+    width: 100%;
+    /* suhde laidasta laitaan */
+    max-height: 300px;
+    /* kuvan koko */
+    object-fit: cover;
+    /* kuvan tyyli */
     margin-top: 0;
 }
 
-/* Styling for the main header */
 h1 {
+    /* otsikko tyyli Tervetuloa sivulla*/
     font-family: 'Lobster', cursive;
     color: #432818;
     font-size: 5rem;
@@ -22,33 +39,42 @@ h1 {
     position: relative;
 }
 
-/* Body styling */
-body {
-    background-color: #FFE6A7;
-    font-family: 'Quicksand', sans-serif;
-    color: #6F1D1B;
-    margin: 0;
-    padding: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+h2 {
+    /* otsikko tyyli Blogi sivulla*/
+    font-family: 'Lobster', cursive;
+    color: #432818;
+    font-size: 4rem;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
+    margin-top: 6px;
+    position: relative;
 }
 
-/* Main section for introductory text */
 main {
+    /* tervetuloa teksti */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
     text-align: center;
-    font-size: 180%;
-    margin: 20px;
+    font-size: 160%;
+    font-size-adjust: from-font;
+    margin: 10px;
 }
 
-/* Button styling */
+p {
+    /* teksti tyyli */
+    font-family: 'Quicksand', sans-serif;
+    color: #6F1D1B;
+    font-size: 100%;
+    margin: 0;
+}
+
 .btn {
+    /* linkki painikkeet */
     display: inline-block;
     padding: 12px 50px;
     background-color: #BB9457;
@@ -62,22 +88,14 @@ main {
     transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 .btn:hover {
     background-color: #99582A;
 }
 
-/* General paragraph text styling */
-p {
-    font-family: 'Quicksand', sans-serif;
-    color: #6F1D1B;
-    font-size: 100%;
-    margin: 0;
-}
-
-/* Styling for blog post titles */
 .title-container {
+    /* kuvaus teksti */
     display: flex;
+    /* flex-wrapilla nämä saa allekkain*/
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
@@ -87,7 +105,6 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Styling for blog post descriptions */
 .description-container {
     display: flex;
     justify-content: center;
@@ -97,10 +114,121 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Styling for the second image */
+.title-container2 {
+    /* kuvaus teksti, blogi sivu */
+    display: flex;
+    /* flex-wrapilla nämä saa allekkain*/
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.description-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.blog-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.btn-description {
+    font-weight: 5px 0 15px;
+    font-size: 1rem;
+    color: #6F1D1B
+}
+
+.target-section {
+    /* otsikko tyyli */
+    font-family: 'Lobster', cursive;
+    color: #432818;
+    margin-bottom: 1rem;
+    background-color: #BB9457;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    position: relative;
+}
+
 .toinen-kuva {
     max-width: 600px;
     height: auto;
     margin: 20px auto;
     display: block;
+}
+
+.kolmas-kuva {
+    max-width: 600px;
+    height: auto;
+    margin: 30px 0;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px;
+}
+
+.contact-list h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    color: #432818;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.contact-list {
+    font-family: 'Quicksand', sans-serif;
+    color: #6F1D1B;
+    margin: 15px;
+    font-size: 1.5rem;
+}
+
+.contact-list ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    /* Add spacing between names */
+    font-size: 1.2rem;
+}
+
+.contact-list a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #6F1D1B;
+    /* Match your color scheme */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    background-color: #BB9457;
+    /* Box appears on hover */
+    border-radius: 15px;
+    color: #99582A;
+    /* Slightly darker on hover */
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin: 3px;
+    transition: background-color 0.3s ease;
 }
